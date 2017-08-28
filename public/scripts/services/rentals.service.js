@@ -5,10 +5,10 @@ myApp.service('RentalsService', ['$http', function($http) {
     self.rentals = { list: [] };
 
     self.getRentals= function() {
-        $http.get('/person').then(function(response) {
+        $http.get('/rentals').then(function(response) {
             self.rentals.list = response.data;
 
-            console.log('get response: ', self.rentals);
+            console.log('get response: ', self.rentals.list);
         });
     };
 
