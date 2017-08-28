@@ -9,4 +9,4 @@ var listingsSchema = new Schema({
 });
 
 // export our model
-module.exports = mongoose.model('Listings', listingSchema);
+module.exports = mongoose.model('Listings', listingsSchema);
